@@ -30,7 +30,7 @@ function DiscussionPage() {
 
     fetchPicture();
 
-    const socket = new WebSocket("ws://localhost:8080");
+    const socket = new WebSocket("ws:https://art-talks.onrender.com");
     setWs(socket);
 
     socket.onmessage = async (event) => {
