@@ -1,0 +1,1 @@
+to run the project only need to run in the server_side and client_side npm i

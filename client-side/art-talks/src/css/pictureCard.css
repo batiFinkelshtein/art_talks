@@ -1,0 +1,33 @@
+/* PictureCard.css */
+
+.picture-card {
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    transition: transform 0.2s; 
+    position: relative; 
+    margin: 10px;
+    cursor: pointer; 
+    background-color: #fff; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .picture-card:hover {
+    transform: scale(1.05); 
+  }
+  
+  .picture-image {
+    width: 100%; 
+    height: auto; 
+  }
+  
+  .image-info {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-top: 1px solid #ccc; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+  }
+  
