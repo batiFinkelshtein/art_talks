@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     const fetchPictures = async () => {
       try {
-        const response = await fetch('http://localhost:8080/api/pictures');
+        const response = await fetch('https://art-talks.onrender.com/api/pictures');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }

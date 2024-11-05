@@ -14,8 +14,7 @@ function DiscussionPage() {
   useEffect(() => {
     const fetchPicture = async () => {
       try {
-        // תקן את הנתיב לכתובת API נכונה
-        const response = await fetch(`http://localhost:8080/api/pictures/${id}`);
+        const response = await fetch(`https://art-talks.onrender.com/api/pictures/${id}`);
         if (!response.ok) {
           throw new Error('Picture not found');
         }
