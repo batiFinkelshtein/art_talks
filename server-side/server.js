@@ -3,7 +3,7 @@ const http = require('http');
 const WebSocket = require('ws');
 const pictures = require('./data');
 const cors = require('cors');
-
+const port = process.env.PORT || 8080;
 const app = express();
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
@@ -37,6 +37,6 @@ wss.on('connection', (ws) => {
   ws.on('close', () => {});
 });
 
-server.listen(8080, () => {
+server.listen(port, () => {
   console.log('Server is running on http://localhost:8080');
 });
